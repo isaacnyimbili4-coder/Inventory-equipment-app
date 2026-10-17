@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b6e6e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Equipment">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0BAMAAADP4xsBAAAAGFBMVEX////+///F3t4Pc3MMbm4Lbm4Jbm4BKSlV+yqBAAAEOUlEQVR42u3bQW/bNhQH8D+fBCwYUotyetghWWS1GDAMSN2mxyB1UH+nfat9gi5xghznNg2wY2WlydG2aDeHFpDFHhZXsiTUtE0OPZAny1B+eSAp6j2ZYn8ib29e8uF1gHUaw+z2BGcnha+co/xz+vSnv38eJ/5adiRa/ebvYiv/hvKP0h2eAWG4lowwBIZn2706esjSK6zpPuiYXR7ltjv/kLhpbyMYAIXR5atq1P3tiyY2bq30XFbo7gX45jRr7Z5X6DcIoKExpCVapKRFBijsLdL8QpMMYPdqgR7qk0GjAp2OrqGx7cc5fS8DnTR9yGmuNWhg/5/etw7RK4Pun83pi0Czves/0KluGfTQIbIndNP4VQAETHQsHuUbgwcQkIbaZYTnAgTwWD8tU8CFeBvopxm2QeAZDDS/B0pTMkF7rqDLqQkZJDnBRFcDmElqw0xz3pP3wgy9J0heGQq7TcyQjJSEIZkmlASG7JgapjqE3Fgt00uKF7HaCuWqrdVJceEdKw194KpFEI7ylZe9GCjF4yotTlPvXeGo/3yiRCsFvXc6KBw2HY/roiEHxaEbjw4muujpB39hhgxOlGafSsw8kcVjIa+FJhqPhFj8V9AVNVCeyEIfvd6VbmlLW9rSlra0pS1t6R+DdpeVWwCkVz1DLh77irRslrLcWeWU8jODyFeiJT3ql78qP+wonVBblNXQ071T8f18OsG4RCcnE4VhLJVbSi1LakqQatTTRsyTFcpqAGBeTVFWM/neqdUTi2ORVCHnj/JZv/yLzyvP4S9fCFtLo85+tKtR2uXJ0pa2tKUtben/i2YKNPvkT1aXOdp8edSCrf4zMpOtTCHna+wlsb8kx6tk02znhi+n2a2/cs4Hv+YRf01+3QhY8v3U1C9H7R+qpe4sOiwXAX+V/6qzXsEBPyrlc0HllLd86dyrr8D8pamiz+2FbmlLW9rSlra0pS1t6XVpro1mizuGmL6o2cdFjU8OVGi1zUnhaTHlli2lHlGiG16r+IyffrtRorlCucVu/ULlxPwDtY1gY5XebgT9Qo8cKm5f4ypbYNmgWJRlSjJzhdL084pFGVOipdoMAVv91Z+Ymqauc+bsbBmifWrHhuiMMlOyQ7rek6kOozMb+WZGsWVs/3XkEQztv3YEbTeMTJGMvXfduscdOlqHIIzQ8SsQeMdEjwQTECQMzOzsDiCw+0g/LSQHAZ6B/e6881+ycMy103cMIIC52scx68xTnGPd9E1vnoecM72TJHsSzKN+rfkNgI9BnvMdau3tLCykk6yhP+h5pvo81h70nHY0TpKbYCFTTd1Y01Ii5evF1N3BMfRc7oO7UlXA4B6PtdwS82f935LJ1IWGFTDCkajQLrrtaHO5+4nXlUmP29lGczCL0U1ZfQX2WCCLNoBZN73n9WWSfJn2nqx5F2a0v/M0Kf7y8RUrGihO+kXcSwAAAABJRU5ErkJggg==">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADABAMAAACg8nE0AAAAGFBMVEX////6/f11ra0ScnINb28Lbm4AZWUAYWFu0WKTAAABOElEQVR42u3asQ3CMBCF4VyghjgsAGzACOwAW7IAy4TQIkgMA2Bq7CtOxqn4XVqOPp9PlvKiyLGadtQVAAAAAAAAAAAAAAAAgHHMjevGZMYVBULbxDN9UxJ43X00I/tn0SMa+rh5+7I9kPjIpXCTQ/g+IxEuGgAAAAAAAAAAAAAAOVnNxNVLCVXKMmcCwlbJgOdkajVLl10aC/DsvKX2k7KNnakCsQAhdMqTSjjXeuAk81uFGJscZ2J9pKSanbloAAAAAAAAAAAAfx2hRNy0r++jKeGM2UDYKsDb+6jKtQJ4sQDLjSkEHnxuCJTOFGMf19wYqy2rb+k+HBcNAAAAAAAAAAAAAICcrI4kOxf/HXTMLN0KtHU1aQWLJk7AhX8qlmEwhN1fjshx0QAAAAAAAAAAAAAAACYHPgraPE4x0jWYAAAAAElFTkSuQmCC">
+<title>Equipment Tracker</title>
+<style>
+:root{--bg:#f3f6f6;--surface:#fff;--ink:#14282b;--muted:#5d7275;--line:#d8e1e2;--brand:#0b6e6e;--brand-ink:#fff;--ok:#1d7a45;--okbg:#e2f3e8;--warn:#9a6200;--warnbg:#fdf0d4;--bad:#b3261e;--badbg:#fbe4e2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1b1d;--surface:#172528;--ink:#e6f0f0;--muted:#93a9ab;--line:#2a3d40;--brand:#4fc3c3;--brand-ink:#08201f;--ok:#6fd49a;--okbg:#17352a;--warn:#f0b955;--warnbg:#3a2d12;--bad:#ff8f86;--badbg:#401b19}}
+:root[data-theme="dark"]{--bg:#0f1b1d;--surface:#172528;--ink:#e6f0f0;--muted:#93a9ab;--line:#2a3d40;--brand:#4fc3c3;--brand-ink:#08201f;--ok:#6fd49a;--okbg:#17352a;--warn:#f0b955;--warnbg:#3a2d12;--bad:#ff8f86;--badbg:#401b19}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 "Public Sans",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+button,input,select,textarea{font:inherit;color:inherit}
+.btn{background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:9px 14px;font-weight:600;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.sm{padding:5px 10px;font-size:13px}
+.btn.del{color:var(--bad)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;cursor:pointer;text-align:left}
+.stat b{display:block;font-size:24px;line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+.stat.on{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.alert{border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:14px}
+.alert.bad{background:var(--badbg);color:var(--bad)}.alert.warn{background:var(--warnbg);color:var(--warn)}
+.alert div{margin-top:2px}
+.tools{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.tools input,.tools select,form input,form select,form textarea{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 10px;width:100%}
+.tools input{flex:1 1 180px;width:auto}.tools select{flex:0 1 150px;width:auto}
+.item{background:var(--surface);border:1px solid var(--line);border-left-width:5px;border-radius:8px;padding:12px;margin-bottom:8px}
+.item.good{border-left-color:var(--ok)}.item.fair{border-left-color:var(--warn)}.item.bad{border-left-color:var(--bad)}
+.row{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.name{font-weight:600;font-size:16px}
+.meta{color:var(--muted);font-size:13px}
+.chip{display:inline-block;border-radius:99px;padding:2px 9px;font-size:12px;font-weight:600;white-space:nowrap}
+.chip.good,.chip.ok{background:var(--okbg);color:var(--ok)}.chip.fair,.chip.soon{background:var(--warnbg);color:var(--warn)}.chip.bad,.chip.over{background:var(--badbg);color:var(--bad)}.chip.none{background:var(--line);color:var(--muted)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.log{margin-top:8px;border-top:1px dashed var(--line);padding-top:6px;font-size:13px;color:var(--muted)}
+.wards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:14px}.ward{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:1px}.ward b{font-size:26px;line-height:1.1;color:var(--brand)}.ward .wn{font-weight:600;font-size:14px}.ward .ws{font-size:12px;color:var(--muted)}.ward.on{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}h2.sec{font-size:14px;margin:4px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.empty{text-align:center;color:var(--muted);padding:32px 12px;border:1px dashed var(--line);border-radius:8px}
+dialog{border:0;border-radius:12px;padding:16px;width:min(500px,94vw);background:var(--surface);color:var(--ink);max-height:90vh}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+form label{display:block;font-size:13px;font-weight:600;margin:10px 0 3px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:480px){.stats{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Equipment Tracker</h1><div class="acts" style="margin:0"><button class="btn alt" id="seed">Load starter list</button><button class="btn" id="add">Add equipment</button></div></header>
+<div id="alerts"></div>
+<div class="stats" id="stats"></div>
+<h2 class="sec">Equipment by ward (tap to filter)</h2>
+<div class="wards" id="wards"></div>
+<div class="tools">
+<input id="q" type="search" placeholder="Search name, ID, location" aria-label="Search">
+<select id="fc" aria-label="Condition"><option value="">All conditions</option><option value="good">Working</option><option value="fair">Needs attention</option><option value="bad">Not working</option></select>
+<select id="fcat" aria-label="Category"><option value="">All categories</option><option value="dx">Diagnostic</option><option value="tx">Treatment</option><option value="rh">Rehabilitation</option></select>
+<select id="fl" aria-label="Location"><option value="">All wards</option></select>
+</div>
+<div id="list"></div>
+</main>
+
+<dialog id="dlg"><form id="f" method="dialog">
+<h2 id="dt" style="margin:0 0 4px;font-size:18px">Add equipment</h2>
+<label for="n">Equipment name</label><input id="n" required placeholder="e.g. Infusion pump">
+<div class="two"><div><label for="mfr">Manufacturer</label><input id="mfr" placeholder="e.g. Baxter"></div>
+<div><label for="mod">Model</label><input id="mod" placeholder="e.g. Sigma Spectrum"></div></div>
+<label for="cat">Equipment category</label><select id="cat"><option value="dx">Diagnostic</option><option value="tx">Treatment</option><option value="rh">Rehabilitation</option></select>
+<div class="two"><div><label for="aid">Asset ID</label><input id="aid" placeholder="e.g. BME-0142"></div>
+<div><label for="sn">Serial number</label><input id="sn"></div></div>
+<label for="loc">Ward / Department</label><input id="loc" required placeholder="Choose or type a ward" list="locs"><datalist id="locs"></datalist>
+<label for="cond">Condition</label><select id="cond"><option value="good">Working</option><option value="fair">Needs attention</option><option value="bad">Not working</option></select>
+<div class="two"><div><label for="int">Preventive maintenance every (days)</label><input id="int" type="number" min="0" placeholder="e.g. 180"></div>
+<div><label for="last">Last maintenance date</label><input id="last" type="date"></div></div>
+<label for="dadd">Date added to inventory</label><input id="dadd" type="date" required>
+<label for="nt">Notes</label><textarea id="nt" rows="2"></textarea>
+<div class="acts" style="justify-content:flex-end;margin-top:14px"><button type="button" class="btn alt" id="cx">Cancel</button><button type="submit" class="btn">Save equipment</button></div>
+</form></dialog>
+
+<dialog id="mdlg"><form id="mf" method="dialog">
+<h2 style="margin:0 0 4px;font-size:18px">Record maintenance</h2><div class="meta" id="mn"></div>
+<label for="md">Date performed</label><input id="md" type="date" required>
+<label for="mt">What was done</label><input id="mt" placeholder="e.g. Calibration and safety check">
+<label for="mc">Condition after</label><select id="mc"><option value="good">Working</option><option value="fair">Needs attention</option><option value="bad">Not working</option></select>
+<div class="acts" style="justify-content:flex-end;margin-top:14px"><button type="button" class="btn alt" id="mx">Cancel</button><button type="submit" class="btn">Save record</button></div>
+</form></dialog>
+
+<script>
+const KEY='equipmentTracker.v1',SOON=14,DAY=864e5;
+const DEF=['Emergency Department','Outpatient (OPD)','General Ward','Maternity Ward','Pediatric Ward','ICU','NICU','Operating Room','Radiology','Laboratory','Physiotherapy','Dialysis Unit','Sterilization (CSSD)','Pharmacy'];
+const CAT={dx:'Diagnostic',tx:'Treatment',rh:'Rehabilitation'};
+const CL={good:'Working',fair:'Needs attention',bad:'Not working'};
+let items=[],filterStat='',editId=null,mId=null;
+try{items=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){items=[]}
+const $=id=>document.getElementById(id);
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}};
+const today=()=>{const d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate())};
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const parse=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const fmt=s=>parse(s).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function due(it){
+ if(!it.interval)return null;
+ const base=it.last?parse(it.last):parse(it.added);
+ const d=new Date(base.getTime()+it.interval*DAY);
+ return {date:d,days:Math.round((d-today())/DAY)};
+}
+function pm(it){
+ const d=due(it);
+ if(!d)return {cls:'none',txt:'No PM schedule',k:'none'};
+ if(d.days<0)return {cls:'over',txt:'PM overdue by '+(-d.days)+' day'+(d.days==-1?'':'s'),k:'over',d};
+ if(d.days===0)return {cls:'soon',txt:'PM due today',k:'soon',d};
+ if(d.days<=SOON)return {cls:'soon',txt:'PM due in '+d.days+' day'+(d.days==1?'':'s'),k:'soon',d};
+ return {cls:'ok',txt:'Next PM '+fmt(iso(d.date)),k:'ok',d};
+}
+function render(){
+ const q=$('q').value.toLowerCase(),fc=$('fc').value,fl=$('fl').value,fcat=$('fcat').value;
+ const locs=[...new Set(items.map(i=>i.loc))].sort();
+ $('fl').innerHTML='<option value="">All wards</option>'+locs.map(l=>`<option ${l===fl?'selected':''}>${esc(l)}</option>`).join('');
+ $('locs').innerHTML=[...new Set([...DEF,...locs])].sort().map(l=>`<option value="${esc(l)}">`).join('');
+ const P=items.map(i=>({i,p:pm(i)}));
+ const over=P.filter(x=>x.p.k==='over'),soon=P.filter(x=>x.p.k==='soon');
+ let a='';
+ if(over.length)a+=`<div class="alert bad"><b>${over.length} overdue for maintenance</b>${over.map(x=>`<div>${esc(x.i.name)} · ${esc(x.p.txt)}</div>`).join('')}</div>`;
+ if(soon.length)a+=`<div class="alert warn"><b>${soon.length} due within ${SOON} days</b>${soon.map(x=>`<div>${esc(x.i.name)} · ${esc(x.p.txt)}</div>`).join('')}</div>`;
+ $('alerts').innerHTML=a;
+ const S=[['','Total',items.length],['good','Working',items.filter(i=>i.cond==='good').length],['over','PM overdue',over.length],['soon','PM due soon',soon.length]];
+ $('stats').innerHTML=S.map(s=>`<button class="stat ${filterStat===s[0]?'on':''}" data-s="${s[0]}"><b>${s[2]}</b><span>${s[1]}</span></button>`).join('');
+ const wm={};P.forEach(({i,p})=>{const w=wm[i.loc]=wm[i.loc]||{n:0,bad:0,pm:0};w.n++;if(i.cond==='bad')w.bad++;if(p.k==='over'||p.k==='soon')w.pm++});
+ $('wards').innerHTML=Object.keys(wm).sort().map(k=>{const w=wm[k];return `<button class="ward ${fl===k?'on':''}" data-w="${esc(k)}"><b>${w.n}</b><span class="wn">${esc(k)}</span><span class="ws">${w.n-w.bad} working${w.bad?' · '+w.bad+' not working':''}${w.pm?' · '+w.pm+' PM due':''}</span></button>`}).join('')||'<div class="empty" style="grid-column:1/-1">No wards yet. Add equipment or load the starter list.</div>';
+ const rows=P.filter(({i,p})=>(!q||[i.name,i.aid,i.loc,i.sn,i.mfr,i.model].join(' ').toLowerCase().includes(q))&&(!fc||i.cond===fc)&&(!fl||i.loc===fl)&&(!fcat||i.cat===fcat)&&(!filterStat||(filterStat==='good'?i.cond==='good':p.k===filterStat)))
+  .sort((x,y)=>(x.p.d?x.p.d.days:1e9)-(y.p.d?y.p.d.days:1e9));
+ $('list').innerHTML=rows.length?rows.map(({i,p})=>`<div class="item ${i.cond}">
+  <div class="row"><div><div class="name">${esc(i.name)}</div>${(i.mfr||i.model)?`<div class="meta">${esc([i.mfr,i.model].filter(Boolean).join(' · Model '))}</div>`:''}<div class="meta">${i.aid?esc(i.aid)+' · ':''}${esc(i.loc)}${i.sn?' · S/N '+esc(i.sn):''}</div></div></div>
+  <div class="chips">${i.cat?`<span class="chip none">${CAT[i.cat]}</span>`:''}<span class="chip ${i.cond}">${CL[i.cond]}</span><span class="chip ${p.cls}">${p.txt}</span>${i.interval?`<span class="chip none">Every ${i.interval} days</span>`:''}</div>
+  <div class="meta">Added to inventory: ${fmt(i.added)}</div>${i.last?`<div class="meta">Last maintenance: ${fmt(i.last)}</div>`:''}${i.notes?`<div class="meta">${esc(i.notes)}</div>`:''}
+  <div class="acts"><button class="btn sm" data-a="m" data-id="${i.id}">Record maintenance</button><button class="btn sm alt" data-a="e" data-id="${i.id}">Edit</button><button class="btn sm alt del" data-a="d" data-id="${i.id}">Delete</button></div>
+  ${(i.log||[]).length?`<div class="log"><b>History</b>${i.log.slice(-3).reverse().map(l=>`<div>${fmt(l.date)} · ${esc(l.what||'Maintenance')} · ${CL[l.cond]}</div>`).join('')}</div>`:''}
+ </div>`).join(''):`<div class="empty">${items.length?'No equipment matches these filters.':'No equipment yet. Select “Add equipment” to log your first item.'}</div>`;
+}
+$('wards').onclick=e=>{const b=e.target.closest('.ward');if(!b)return;$('fl').value=$('fl').value===b.dataset.w?'':b.dataset.w;render()};
+$('stats').onclick=e=>{const b=e.target.closest('.stat');if(!b)return;filterStat=filterStat===b.dataset.s?'':b.dataset.s;render()};
+['q','fc','fl','fcat'].forEach(id=>$(id).oninput=render);
+$('add').onclick=()=>{editId=null;$('f').reset();$('dadd').value=iso(today());$('dt').textContent='Add equipment';$('dlg').showModal()};
+$('cx').onclick=()=>$('dlg').close();$('mx').onclick=()=>$('mdlg').close();
+$('f').onsubmit=()=>{
+ const o={name:$('n').value.trim(),mfr:$('mfr').value.trim(),model:$('mod').value.trim(),cat:$('cat').value,added:$('dadd').value||iso(today()),aid:$('aid').value.trim(),sn:$('sn').value.trim(),loc:$('loc').value.trim(),cond:$('cond').value,interval:parseInt($('int').value)||0,last:$('last').value,notes:$('nt').value.trim()};
+ if(editId){Object.assign(items.find(i=>i.id===editId),o)}
+ else items.push({id:Date.now().toString(36),added:iso(today()),log:[],...o});
+ save();render();
+};
+$('list').onclick=e=>{
+ const b=e.target.closest('button[data-a]');if(!b)return;
+ const it=items.find(i=>i.id===b.dataset.id);
+ if(b.dataset.a==='d'){if(confirm('Delete '+it.name+'? This cannot be undone.')){items=items.filter(i=>i!==it);save();render()}}
+ if(b.dataset.a==='e'){editId=it.id;$('dt').textContent='Edit equipment';
+  $('n').value=it.name;$('mfr').value=it.mfr||'';$('cat').value=it.cat||'dx';$('dadd').value=it.added||iso(today());$('mod').value=it.model||'';$('aid').value=it.aid;$('sn').value=it.sn;$('loc').value=it.loc;$('cond').value=it.cond;$('int').value=it.interval||'';$('last').value=it.last||'';$('nt').value=it.notes||'';$('dlg').showModal()}
+ if(b.dataset.a==='m'){mId=it.id;$('mn').textContent=it.name;$('md').value=iso(today());$('mt').value='';$('mc').value=it.cond==='bad'?'good':it.cond;$('mdlg').showModal()}
+};
+const SEED=[['dx',[['X-ray machine','Radiology',180],['CT scanner','Radiology',90],['MRI scanner','Radiology',90],['Ultrasound machine','Radiology',180],['ECG machine','Cardiology',180],['Patient monitor','ICU',180],['Laboratory analyzer','Laboratory',90],['Microscope','Laboratory',365],['Pulse oximeter','Emergency Department',180]]],
+['tx',[['Ventilator','ICU',90],['Defibrillator','Emergency Department',90],['Infusion pump','General Ward',180],['Syringe pump','ICU',180],['Anesthesia machine','Operating Room',90],['Electrosurgical unit','Operating Room',180],['Surgical light','Operating Room',365],['Suction unit','Operating Room',180],['Autoclave','Sterilization (CSSD)',90],['Oxygen concentrator','General Ward',180],['Dialysis machine','Dialysis Unit',90],['Infant incubator','NICU',180],['Hospital bed','General Ward',365]]],
+['rh',[['Treadmill','Physiotherapy',180],['Exercise bike','Physiotherapy',180],['Parallel bars','Physiotherapy',365],['Traction unit','Physiotherapy',180],['TENS / electrotherapy unit','Physiotherapy',180],['Therapeutic ultrasound unit','Physiotherapy',180],['Therapy table','Physiotherapy',365],['Paraffin wax bath','Physiotherapy',365]]]];
+$('seed').onclick=()=>{
+ if(!confirm('Add a starter list of typical level-one hospital equipment? You can edit or delete any item.'))return;
+ let n=0;
+ SEED.forEach(([k,l])=>l.forEach(([name,loc,int])=>{
+  if(items.some(i=>i.name===name&&i.loc===loc))return;
+  n++;items.push({id:Date.now().toString(36)+n,added:iso(today()),log:[],name,aid:k.toUpperCase()+'-'+String(n).padStart(3,'0'),sn:'',mfr:'',model:'',loc,cond:'good',interval:int,last:'',notes:'',cat:k});
+ }));
+ save();render();
+};
+$('mf').onsubmit=()=>{
+ const it=items.find(i=>i.id===mId);
+ it.log=it.log||[];it.log.push({date:$('md').value,what:$('mt').value.trim(),cond:$('mc').value});
+ it.last=$('md').value;it.cond=$('mc').value;save();render();
+};
+render();
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+</script>
+</body>
+  </html>
+  
